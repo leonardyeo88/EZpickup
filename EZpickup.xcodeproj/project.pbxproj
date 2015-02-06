@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D722D11F191F76E80079BC2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D11E191F76E80079BC2F /* Foundation.framework */; };
+		D722D121191F76E80079BC2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D120191F76E80079BC2F /* CoreGraphics.framework */; };
+		D722D123191F76E80079BC2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D122191F76E80079BC2F /* UIKit.framework */; };
+		D722D129191F76E80079BC2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D722D127191F76E80079BC2F /* InfoPlist.strings */; };
+		D722D12B191F76E80079BC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D722D12A191F76E80079BC2F /* main.m */; };
+		D722D12F191F76E80079BC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D722D12E191F76E80079BC2F /* AppDelegate.m */; };
+		D722D132191F76E80079BC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D722D130191F76E80079BC2F /* Main.storyboard */; };
+		D722D135191F76E80079BC2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722D134191F76E80079BC2F /* ViewController.m */; };
+		D722D137191F76E80079BC2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D722D136191F76E80079BC2F /* Images.xcassets */; };
+		D722D13E191F76E80079BC2F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D13D191F76E80079BC2F /* XCTest.framework */; };
+		D722D13F191F76E80079BC2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D11E191F76E80079BC2F /* Foundation.framework */; };
+		D722D140191F76E80079BC2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D122191F76E80079BC2F /* UIKit.framework */; };
+		D722D148191F76E80079BC2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D722D146191F76E80079BC2F /* InfoPlist.strings */; };
+		D722D14A191F76E80079BC2F /* EZpickupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D722D149191F76E80079BC2F /* EZpickupTests.m */; };
+		D722D155191F9CB30079BC2F /* CurrentLocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722D154191F9CB30079BC2F /* CurrentLocationMapViewController.m */; };
+		D722D157191F9CEA0079BC2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D156191F9CEA0079BC2F /* MapKit.framework */; };
+		D722D159191F9CF10079BC2F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722D158191F9CF10079BC2F /* CoreLocation.framework */; };
+		D722D15C191FA0C20079BC2F /* ChooseGenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722D15B191FA0C20079BC2F /* ChooseGenderViewController.m */; };
+		D7A9B945192131760090B171 /* Pickuplines.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B944192131760090B171 /* Pickuplines.m */; };
+		D7A9B9481921319B0090B171 /* PickuplinesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B9471921319B0090B171 /* PickuplinesCell.m */; };
+		D7A9B94B192140500090B171 /* PickuplinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B94A192140500090B171 /* PickuplinesTableViewController.m */; };
+		D7A9B94E1921D71B0090B171 /* AddPickuplinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B94D1921D71B0090B171 /* AddPickuplinesViewController.m */; };
+		D7A9B9511922507F0090B171 /* chick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B94F1922507F0090B171 /* chick.jpg */; };
+		D7A9B9521922507F0090B171 /* hunk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B9501922507F0090B171 /* hunk.jpg */; };
+		D7A9B9571922860A0090B171 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B9531922860A0090B171 /* 1.png */; };
+		D7A9B9581922860A0090B171 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B9541922860A0090B171 /* 2.png */; };
+		D7A9B9591922860A0090B171 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B9551922860A0090B171 /* 3.png */; };
+		D7A9B95A1922860A0090B171 /* go.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B9561922860A0090B171 /* go.png */; };
+		D7A9B95C19236F5F0090B171 /* homepage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B95B19236F5F0090B171 /* homepage.jpg */; };
+		D7A9B96A1924A3EB0090B171 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B95F1924A3EB0090B171 /* RECommonFunctions.m */; };
+		D7A9B96B1924A3EB0090B171 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B9611924A3EB0090B171 /* REFrostedContainerViewController.m */; };
+		D7A9B96C1924A3EB0090B171 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B9631924A3EB0090B171 /* REFrostedViewController.m */; };
+		D7A9B96D1924A3EB0090B171 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B9651924A3EB0090B171 /* UIImage+REFrostedViewController.m */; };
+		D7A9B96E1924A3EB0090B171 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B9671924A3EB0090B171 /* UIView+REFrostedViewController.m */; };
+		D7A9B96F1924A3EB0090B171 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9B9691924A3EB0090B171 /* UIViewController+REFrostedViewController.m */; };
+		D7A9B97119274CC50090B171 /* ezpickupicon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A9B97019274CC50090B171 /* ezpickupicon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D722D141191F76E80079BC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D722D113191F76E80079BC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D722D11A191F76E80079BC2F;
+			remoteInfo = EZpickup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D722D11B191F76E80079BC2F /* EZpickup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZpickup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D722D11E191F76E80079BC2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D722D120191F76E80079BC2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D722D122191F76E80079BC2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D722D126191F76E80079BC2F /* EZpickup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EZpickup-Info.plist"; sourceTree = "<group>"; };
+		D722D128191F76E80079BC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D722D12A191F76E80079BC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D722D12C191F76E80079BC2F /* EZpickup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EZpickup-Prefix.pch"; sourceTree = "<group>"; };
+		D722D12D191F76E80079BC2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D722D12E191F76E80079BC2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D722D131191F76E80079BC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D722D133191F76E80079BC2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D722D134191F76E80079BC2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D722D136191F76E80079BC2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D722D13C191F76E80079BC2F /* EZpickupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZpickupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D722D13D191F76E80079BC2F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D722D145191F76E80079BC2F /* EZpickupTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EZpickupTests-Info.plist"; sourceTree = "<group>"; };
+		D722D147191F76E80079BC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D722D149191F76E80079BC2F /* EZpickupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZpickupTests.m; sourceTree = "<group>"; };
+		D722D153191F9CB30079BC2F /* CurrentLocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentLocationMapViewController.h; sourceTree = "<group>"; };
+		D722D154191F9CB30079BC2F /* CurrentLocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationMapViewController.m; sourceTree = "<group>"; };
+		D722D156191F9CEA0079BC2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D722D158191F9CF10079BC2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D722D15A191FA0C20079BC2F /* ChooseGenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseGenderViewController.h; sourceTree = "<group>"; };
+		D722D15B191FA0C20079BC2F /* ChooseGenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseGenderViewController.m; sourceTree = "<group>"; };
+		D722D15D191FE04B0079BC2F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../Downloads/GoogleMaps-iOS-1.8.0/GoogleMaps.framework"; sourceTree = "<group>"; };
+		D7A9B943192131760090B171 /* Pickuplines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pickuplines.h; sourceTree = "<group>"; };
+		D7A9B944192131760090B171 /* Pickuplines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pickuplines.m; sourceTree = "<group>"; };
+		D7A9B9461921319B0090B171 /* PickuplinesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickuplinesCell.h; sourceTree = "<group>"; };
+		D7A9B9471921319B0090B171 /* PickuplinesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickuplinesCell.m; sourceTree = "<group>"; };
+		D7A9B949192140500090B171 /* PickuplinesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickuplinesTableViewController.h; sourceTree = "<group>"; };
+		D7A9B94A192140500090B171 /* PickuplinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickuplinesTableViewController.m; sourceTree = "<group>"; };
+		D7A9B94C1921D71B0090B171 /* AddPickuplinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPickuplinesViewController.h; sourceTree = "<group>"; };
+		D7A9B94D1921D71B0090B171 /* AddPickuplinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPickuplinesViewController.m; sourceTree = "<group>"; };
+		D7A9B94F1922507F0090B171 /* chick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chick.jpg; sourceTree = "<group>"; };
+		D7A9B9501922507F0090B171 /* hunk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hunk.jpg; sourceTree = "<group>"; };
+		D7A9B9531922860A0090B171 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D7A9B9541922860A0090B171 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D7A9B9551922860A0090B171 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D7A9B9561922860A0090B171 /* go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go.png; sourceTree = "<group>"; };
+		D7A9B95B19236F5F0090B171 /* homepage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homepage.jpg; sourceTree = "<group>"; };
+		D7A9B95E1924A3EB0090B171 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		D7A9B95F1924A3EB0090B171 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		D7A9B9601924A3EB0090B171 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		D7A9B9611924A3EB0090B171 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		D7A9B9621924A3EB0090B171 /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		D7A9B9631924A3EB0090B171 /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		D7A9B9641924A3EB0090B171 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		D7A9B9651924A3EB0090B171 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		D7A9B9661924A3EB0090B171 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		D7A9B9671924A3EB0090B171 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		D7A9B9681924A3EB0090B171 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		D7A9B9691924A3EB0090B171 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		D7A9B97019274CC50090B171 /* ezpickupicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ezpickupicon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D722D118191F76E80079BC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D722D159191F9CF10079BC2F /* CoreLocation.framework in Frameworks */,
+				D722D157191F9CEA0079BC2F /* MapKit.framework in Frameworks */,
+				D722D121191F76E80079BC2F /* CoreGraphics.framework in Frameworks */,
+				D722D123191F76E80079BC2F /* UIKit.framework in Frameworks */,
+				D722D11F191F76E80079BC2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D722D139191F76E80079BC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D722D13E191F76E80079BC2F /* XCTest.framework in Frameworks */,
+				D722D140191F76E80079BC2F /* UIKit.framework in Frameworks */,
+				D722D13F191F76E80079BC2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D722D112191F76E80079BC2F = {
+			isa = PBXGroup;
+			children = (
+				D7A9B95D1924A3EB0090B171 /* REFrostedViewController */,
+				D7A9B94C1921D71B0090B171 /* AddPickuplinesViewController.h */,
+				D7A9B94D1921D71B0090B171 /* AddPickuplinesViewController.m */,
+				D7A9B949192140500090B171 /* PickuplinesTableViewController.h */,
+				D7A9B94A192140500090B171 /* PickuplinesTableViewController.m */,
+				D7A9B9461921319B0090B171 /* PickuplinesCell.h */,
+				D7A9B9471921319B0090B171 /* PickuplinesCell.m */,
+				D7A9B943192131760090B171 /* Pickuplines.h */,
+				D7A9B944192131760090B171 /* Pickuplines.m */,
+				D722D15A191FA0C20079BC2F /* ChooseGenderViewController.h */,
+				D722D15B191FA0C20079BC2F /* ChooseGenderViewController.m */,
+				D722D153191F9CB30079BC2F /* CurrentLocationMapViewController.h */,
+				D722D154191F9CB30079BC2F /* CurrentLocationMapViewController.m */,
+				D722D124191F76E80079BC2F /* EZpickup */,
+				D722D143191F76E80079BC2F /* EZpickupTests */,
+				D722D11D191F76E80079BC2F /* Frameworks */,
+				D722D11C191F76E80079BC2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D722D11C191F76E80079BC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D722D11B191F76E80079BC2F /* EZpickup.app */,
+				D722D13C191F76E80079BC2F /* EZpickupTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D722D11D191F76E80079BC2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D722D15D191FE04B0079BC2F /* GoogleMaps.framework */,
+				D722D158191F9CF10079BC2F /* CoreLocation.framework */,
+				D722D156191F9CEA0079BC2F /* MapKit.framework */,
+				D722D11E191F76E80079BC2F /* Foundation.framework */,
+				D722D120191F76E80079BC2F /* CoreGraphics.framework */,
+				D722D122191F76E80079BC2F /* UIKit.framework */,
+				D722D13D191F76E80079BC2F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D722D124191F76E80079BC2F /* EZpickup */ = {
+			isa = PBXGroup;
+			children = (
+				D7A9B97019274CC50090B171 /* ezpickupicon.png */,
+				D7A9B95B19236F5F0090B171 /* homepage.jpg */,
+				D7A9B9531922860A0090B171 /* 1.png */,
+				D7A9B9541922860A0090B171 /* 2.png */,
+				D7A9B9551922860A0090B171 /* 3.png */,
+				D7A9B9561922860A0090B171 /* go.png */,
+				D7A9B94F1922507F0090B171 /* chick.jpg */,
+				D7A9B9501922507F0090B171 /* hunk.jpg */,
+				D722D12D191F76E80079BC2F /* AppDelegate.h */,
+				D722D12E191F76E80079BC2F /* AppDelegate.m */,
+				D722D130191F76E80079BC2F /* Main.storyboard */,
+				D722D133191F76E80079BC2F /* ViewController.h */,
+				D722D134191F76E80079BC2F /* ViewController.m */,
+				D722D136191F76E80079BC2F /* Images.xcassets */,
+				D722D125191F76E80079BC2F /* Supporting Files */,
+			);
+			path = EZpickup;
+			sourceTree = "<group>";
+		};
+		D722D125191F76E80079BC2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D722D126191F76E80079BC2F /* EZpickup-Info.plist */,
+				D722D127191F76E80079BC2F /* InfoPlist.strings */,
+				D722D12A191F76E80079BC2F /* main.m */,
+				D722D12C191F76E80079BC2F /* EZpickup-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D722D143191F76E80079BC2F /* EZpickupTests */ = {
+			isa = PBXGroup;
+			children = (
+				D722D149191F76E80079BC2F /* EZpickupTests.m */,
+				D722D144191F76E80079BC2F /* Supporting Files */,
+			);
+			path = EZpickupTests;
+			sourceTree = "<group>";
+		};
+		D722D144191F76E80079BC2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D722D145191F76E80079BC2F /* EZpickupTests-Info.plist */,
+				D722D146191F76E80079BC2F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7A9B95D1924A3EB0090B171 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7A9B95E1924A3EB0090B171 /* RECommonFunctions.h */,
+				D7A9B95F1924A3EB0090B171 /* RECommonFunctions.m */,
+				D7A9B9601924A3EB0090B171 /* REFrostedContainerViewController.h */,
+				D7A9B9611924A3EB0090B171 /* REFrostedContainerViewController.m */,
+				D7A9B9621924A3EB0090B171 /* REFrostedViewController.h */,
+				D7A9B9631924A3EB0090B171 /* REFrostedViewController.m */,
+				D7A9B9641924A3EB0090B171 /* UIImage+REFrostedViewController.h */,
+				D7A9B9651924A3EB0090B171 /* UIImage+REFrostedViewController.m */,
+				D7A9B9661924A3EB0090B171 /* UIView+REFrostedViewController.h */,
+				D7A9B9671924A3EB0090B171 /* UIView+REFrostedViewController.m */,
+				D7A9B9681924A3EB0090B171 /* UIViewController+REFrostedViewController.h */,
+				D7A9B9691924A3EB0090B171 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D722D11A191F76E80079BC2F /* EZpickup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D722D14D191F76E80079BC2F /* Build configuration list for PBXNativeTarget "EZpickup" */;
+			buildPhases = (
+				D722D117191F76E80079BC2F /* Sources */,
+				D722D118191F76E80079BC2F /* Frameworks */,
+				D722D119191F76E80079BC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZpickup;
+			productName = EZpickup;
+			productReference = D722D11B191F76E80079BC2F /* EZpickup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D722D13B191F76E80079BC2F /* EZpickupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D722D150191F76E80079BC2F /* Build configuration list for PBXNativeTarget "EZpickupTests" */;
+			buildPhases = (
+				D722D138191F76E80079BC2F /* Sources */,
+				D722D139191F76E80079BC2F /* Frameworks */,
+				D722D13A191F76E80079BC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D722D142191F76E80079BC2F /* PBXTargetDependency */,
+			);
+			name = EZpickupTests;
+			productName = EZpickupTests;
+			productReference = D722D13C191F76E80079BC2F /* EZpickupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D722D113191F76E80079BC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = leonard;
+				TargetAttributes = {
+					D722D11A191F76E80079BC2F = {
+						DevelopmentTeam = 57L95WLNH2;
+					};
+					D722D13B191F76E80079BC2F = {
+						TestTargetID = D722D11A191F76E80079BC2F;
+					};
+				};
+			};
+			buildConfigurationList = D722D116191F76E80079BC2F /* Build configuration list for PBXProject "EZpickup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D722D112191F76E80079BC2F;
+			productRefGroup = D722D11C191F76E80079BC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D722D11A191F76E80079BC2F /* EZpickup */,
+				D722D13B191F76E80079BC2F /* EZpickupTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D722D119191F76E80079BC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A9B97119274CC50090B171 /* ezpickupicon.png in Resources */,
+				D722D137191F76E80079BC2F /* Images.xcassets in Resources */,
+				D7A9B9521922507F0090B171 /* hunk.jpg in Resources */,
+				D7A9B9581922860A0090B171 /* 2.png in Resources */,
+				D7A9B9591922860A0090B171 /* 3.png in Resources */,
+				D722D129191F76E80079BC2F /* InfoPlist.strings in Resources */,
+				D7A9B95A1922860A0090B171 /* go.png in Resources */,
+				D7A9B9571922860A0090B171 /* 1.png in Resources */,
+				D7A9B9511922507F0090B171 /* chick.jpg in Resources */,
+				D722D132191F76E80079BC2F /* Main.storyboard in Resources */,
+				D7A9B95C19236F5F0090B171 /* homepage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D722D13A191F76E80079BC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D722D148191F76E80079BC2F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D722D117191F76E80079BC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A9B96F1924A3EB0090B171 /* UIViewController+REFrostedViewController.m in Sources */,
+				D722D15C191FA0C20079BC2F /* ChooseGenderViewController.m in Sources */,
+				D7A9B96A1924A3EB0090B171 /* RECommonFunctions.m in Sources */,
+				D722D135191F76E80079BC2F /* ViewController.m in Sources */,
+				D7A9B96B1924A3EB0090B171 /* REFrostedContainerViewController.m in Sources */,
+				D7A9B94B192140500090B171 /* PickuplinesTableViewController.m in Sources */,
+				D7A9B96C1924A3EB0090B171 /* REFrostedViewController.m in Sources */,
+				D722D12F191F76E80079BC2F /* AppDelegate.m in Sources */,
+				D7A9B9481921319B0090B171 /* PickuplinesCell.m in Sources */,
+				D722D155191F9CB30079BC2F /* CurrentLocationMapViewController.m in Sources */,
+				D7A9B96D1924A3EB0090B171 /* UIImage+REFrostedViewController.m in Sources */,
+				D722D12B191F76E80079BC2F /* main.m in Sources */,
+				D7A9B94E1921D71B0090B171 /* AddPickuplinesViewController.m in Sources */,
+				D7A9B96E1924A3EB0090B171 /* UIView+REFrostedViewController.m in Sources */,
+				D7A9B945192131760090B171 /* Pickuplines.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D722D138191F76E80079BC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D722D14A191F76E80079BC2F /* EZpickupTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D722D142191F76E80079BC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D722D11A191F76E80079BC2F /* EZpickup */;
+			targetProxy = D722D141191F76E80079BC2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D722D127191F76E80079BC2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D722D128191F76E80079BC2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D722D130191F76E80079BC2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D722D131191F76E80079BC2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D722D146191F76E80079BC2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D722D147191F76E80079BC2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D722D14B191F76E80079BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D722D14C191F76E80079BC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D722D14E191F76E80079BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Leonard/Downloads/GoogleMaps-iOS-1.8.0",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EZpickup/EZpickup-Prefix.pch";
+				INFOPLIST_FILE = "EZpickup/EZpickup-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D722D14F191F76E80079BC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Leonard/Downloads/GoogleMaps-iOS-1.8.0",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EZpickup/EZpickup-Prefix.pch";
+				INFOPLIST_FILE = "EZpickup/EZpickup-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D722D151191F76E80079BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EZpickup.app/EZpickup";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EZpickup/EZpickup-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EZpickupTests/EZpickupTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D722D152191F76E80079BC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EZpickup.app/EZpickup";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EZpickup/EZpickup-Prefix.pch";
+				INFOPLIST_FILE = "EZpickupTests/EZpickupTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D722D116191F76E80079BC2F /* Build configuration list for PBXProject "EZpickup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D722D14B191F76E80079BC2F /* Debug */,
+				D722D14C191F76E80079BC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D722D14D191F76E80079BC2F /* Build configuration list for PBXNativeTarget "EZpickup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D722D14E191F76E80079BC2F /* Debug */,
+				D722D14F191F76E80079BC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D722D150191F76E80079BC2F /* Build configuration list for PBXNativeTarget "EZpickupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D722D151191F76E80079BC2F /* Debug */,
+				D722D152191F76E80079BC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D722D113191F76E80079BC2F /* Project object */;
+}
